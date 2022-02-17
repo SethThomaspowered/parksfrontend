@@ -9,6 +9,8 @@ import { AddparkComponent } from './addpark/addpark.component';
 import { FormsModule } from '@angular/forms';
 import { AddfeatureComponent } from './addfeature/addfeature.component';
 import { AddparkfeatureComponent } from './addparkfeature/addparkfeature.component';
+import { ParksviewComponent } from './parksview/parksview.component';
+import { FeaturesviewComponent } from './featuresview/featuresview.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AddparkfeatureComponent } from './addparkfeature/addparkfeature.compone
     LocalweatherComponent,
     AddparkComponent,
     AddfeatureComponent,
-    AddparkfeatureComponent
+    AddparkfeatureComponent,
+    ParksviewComponent,
+    FeaturesviewComponent
   ],
   imports: [
     BrowserModule,

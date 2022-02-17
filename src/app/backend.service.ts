@@ -40,4 +40,7 @@ export class BackendService {
     console.log(parkFeature);
     this.http.put(`${this.uri}/api/parks/${parkId}/features/${featureId}`, parkFeature).subscribe(response=> console.log(response));
   }
+  getFeatures(){
+    return this.http.get(`${this.uri}/api/features`)
+  }
 }
