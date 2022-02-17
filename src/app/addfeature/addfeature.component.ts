@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-addfeature',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./addfeature.component.css']
 })
 export class AddfeatureComponent implements OnInit {
-
-  constructor() { }
+  newFeature: string="";
+  addFeature(feature: string){
+    this.backend.addFeature(feature);
+  }
+  constructor(private backend: BackendService) { }
 
   ngOnInit(): void {
   }
