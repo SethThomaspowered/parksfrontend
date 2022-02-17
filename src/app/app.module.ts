@@ -5,16 +5,24 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LocalweatherComponent } from './localweather/localweather.component';
+import { AddparkComponent } from './addpark/addpark.component';
+import { FormsModule } from '@angular/forms';
+import { AddfeatureComponent } from './addfeature/addfeature.component';
+import { AddparkfeatureComponent } from './addparkfeature/addparkfeature.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LocalweatherComponent
+    LocalweatherComponent,
+    AddparkComponent,
+    AddfeatureComponent,
+    AddparkfeatureComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
